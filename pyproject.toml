@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "td-sequential"
+version = "1.0.0"
+description = "TD Sequential indicator for Python: TD9 setup, countdown 13 and TDST levels on OHLC candles. Tested, zero dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Moolish", email = "support@moolish.com" }]
+keywords = [
+  "td-sequential", "tdsequential", "td9", "td-setup", "td-countdown", "tdst", "tom-demark",
+  "technical-analysis", "indicator", "trading", "crypto", "stocks", "forex", "ohlc", "pandas",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Developers",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.5"]
+test = ["pytest>=7", "pandas>=1.5"]
+
+[project.urls]
+Homepage = "https://moolish.com/tools/td-sequential-counter/"
+Documentation = "https://moolish.com/learn/td-sequential/"
+Source = "https://github.com/moolish-com/td-sequential-python"
+Issues = "https://github.com/moolish-com/td-sequential-python/issues"
+Changelog = "https://github.com/moolish-com/td-sequential-python/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/td_sequential"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "SPEC.md", "README.md", "CHANGELOG.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
