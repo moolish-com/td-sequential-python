@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "td-sequential"
-version = "1.0.0"
+version = "1.0.1"
 description = "TD Sequential indicator for Python: TD9 setup, countdown 13 and TDST levels on OHLC candles. Tested, zero dependencies."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -37,8 +37,8 @@ pandas = ["pandas>=1.5"]
 test = ["pytest>=7", "pandas>=1.5"]
 
 [project.urls]
-Homepage = "https://moolish.com/tools/td-sequential-counter/"
-Documentation = "https://moolish.com/learn/td-sequential/"
+Homepage = "https://moolish.com/tools/td-sequential-counter/?utm_source=pypi&utm_medium=oss&utm_campaign=td-sequential-python"
+Documentation = "https://moolish.com/learn/td-sequential/?utm_source=pypi&utm_medium=oss&utm_campaign=td-sequential-python"
 Source = "https://github.com/moolish-com/td-sequential-python"
 Issues = "https://github.com/moolish-com/td-sequential-python/issues"
 Changelog = "https://github.com/moolish-com/td-sequential-python/blob/main/CHANGELOG.md"

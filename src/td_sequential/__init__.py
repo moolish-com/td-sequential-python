@@ -2,5 +2,5 @@
 
 from .core import CountdownState, Latest, TdBar, compute, latest
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = ["CountdownState", "Latest", "TdBar", "compute", "latest", "__version__"]

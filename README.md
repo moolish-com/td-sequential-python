@@ -8,7 +8,7 @@
 
 `td-sequential` computes the TD Sequential indicator in Python on a list of OHLC candles: the TD Setup (the 1 to 9 count, often called TD9), the TD Countdown (1 to 13), the TDST support and resistance levels left by completed setups, and the information-only perfection and price flip flags. It works on crypto, stocks and forex candles of any timeframe, has no dependencies, supports Python 3.9 and later, and has an optional pandas helper.
 
-It follows the plain-English rules in [SPEC.md](SPEC.md) and matches the reference output bar for bar. The free [TD Sequential counter](https://moolish.com/tools/td-sequential-counter/) on moolish.com shows the current count on a crypto pair without installing anything.
+It follows the plain-English rules in [SPEC.md](SPEC.md) and matches the reference output bar for bar. The free [TD Sequential counter](https://moolish.com/tools/td-sequential-counter/?utm_medium=oss&utm_campaign=td-sequential-python) on moolish.com shows the current count on a crypto pair without installing anything.
 
 ## Install
 
@@ -91,14 +91,15 @@ The test suite replays eight real candle histories (crypto pairs on 4-hour, dail
 
 ## What is TD Sequential?
 
-TD Sequential is Tom DeMark's method for spotting a stretched run of closes. A TD Setup counts consecutive bars that close beyond the close four bars earlier, and a completed 9 can start a countdown that needs 13 qualifying bars. A 9 or a 13 describes past prices and gives no direction on its own; the [TD Sequential guide](https://moolish.com/learn/td-sequential/) explains the method, [TDST](https://moolish.com/learn/td-sequential/tdst/) and [perfected setups](https://moolish.com/learn/td-sequential/perfected-setup/).
+TD Sequential is Tom DeMark's method for spotting a stretched run of closes. A TD Setup counts consecutive bars that close beyond the close four bars earlier, and a completed 9 can start a countdown that needs 13 qualifying bars. A 9 or a 13 describes past prices and gives no direction on its own; the [TD Sequential guide](https://moolish.com/learn/td-sequential/?utm_medium=oss&utm_campaign=td-sequential-python) explains the method, [TDST](https://moolish.com/learn/td-sequential/tdst/?utm_medium=oss&utm_campaign=td-sequential-python) and [perfected setups](https://moolish.com/learn/td-sequential/perfected-setup/?utm_medium=oss&utm_campaign=td-sequential-python).
 
 ## Related
 
 - [td-sequential](https://github.com/moolish-com/td-sequential) - JavaScript and TypeScript (npm)
 - [td-sequential-pine-script](https://github.com/moolish-com/td-sequential-pine-script) - TradingView Pine Script v6
 - [td-sequential-screener](https://github.com/moolish-com/td-sequential-screener) - command-line screener
-- [Free TD Sequential counter](https://moolish.com/tools/td-sequential-counter/) - check a crypto pair in the browser
+- [Free TD Sequential counter](https://moolish.com/tools/td-sequential-counter/?utm_medium=oss&utm_campaign=td-sequential-python) - check a crypto pair in the browser
+- [Moolish](https://moolish.com/?utm_medium=oss&utm_campaign=td-sequential-python): the most complete TD Sequential scanner for crypto. Every 9, 13, qualified countdown, Countdown 1 and TDST level on 1,800+ markets across timeframes, confirmed by VSA volume and 45 candlestick patterns, with Telegram alerts.
 
 ## Attribution and disclaimer
 
